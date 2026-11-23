@@ -230,7 +230,7 @@ Created on Fri Oct 11 20:41:07 2024
     plt.show()
     print(f'Feature contribution plots saved as: {output_png_path} and {output_svg_path}')
     probabilities = model.predict(test_image, verbose=0).ravel()
-    export_pca_prediction_map(pca_data_test, probabilities, 'PCA_1DCNN_FROZEN')
+    export_prediction_map(pca_data_test, probabilities, 'PCA_1DCNN_FROZEN')
     export_pca_sensitivity(feature_contributions, 'PCA_1DCNN_FROZEN')
 
 def original_003():
@@ -332,7 +332,7 @@ def original_003():
     for k, (x_min, x_max, y_min, y_max) in enumerate(indices):
         mask = (x_coords >= x_min) & (x_coords < x_max) & (y_coords >= y_min) & (y_coords < y_max)
         full[mask] = probabilities[k]
-    export_pca_prediction_map(pca_data_test, full, 'PCA_2DCNN_FROZEN')
+    export_prediction_map(pca_data_test, full, 'PCA_2DCNN_FROZEN')
     pd.DataFrame(indices, columns=['x_min', 'x_max', 'y_min', 'y_max']).assign(Predicted_Probability=probabilities).to_csv(OUT / 'PCA_2DCNN_FROZEN__patch_predictions.csv', index=False)
     export_pca_sensitivity(feature_contributions, 'PCA_2DCNN_FROZEN')
 
@@ -1605,21 +1605,17 @@ All figure fonts are set to Times New Roman.
     missing_features = [col for col in feature_cols if col not in test_data.columns]
     if len(missing_features) > 0:
         raise ValueError(f'测试集中缺少以下特征列：{missing_features}')
-    test_feature_values = test_data.loc[test_data.index[valid_indices], feature_cols].to_numpy(dtype=np.float32, copy=True)
-    print(f'Feature shape before reshape: {test_feature_values.shape}')
-    test_image = test_feature_values.reshape(-1, 23, 1)
-    print(f'1D CNN input shape: {test_image.shape}')
+    # Map the full study area. Keep the ROC and P-A evaluation on labelled pixels.
+    features = test_data[feature_cols].to_numpy(dtype=np.float32, copy=True)
     model = load_model(model_path)
-    print(f'模型已加载：{model_path}')
-    print(f'图片输出目录：{fig_output_dir}')
-    predictions = model.predict(test_image, batch_size=8192, verbose=1)
-    if predictions.ndim == 2 and predictions.shape[1] == 1:
-        y_score = predictions.ravel()
-    elif predictions.ndim == 2 and predictions.shape[1] == 2:
-        y_score = predictions[:, 1]
+    predictions = model.predict(features.reshape(-1, 23, 1), batch_size=8192, verbose=1)
+    if predictions.ndim == 2 and predictions.shape[1] == 2:
+        full_scores = predictions[:, 1]
     else:
-        y_score = predictions.ravel()
-    y_score = y_score.astype(np.float32)
+        full_scores = predictions.ravel()
+    full_scores = full_scores.astype(np.float32, copy=False)
+    export_prediction_map(test_data, full_scores, 'Original_1DCNN')
+    y_score = full_scores[valid_indices]
     print(f'Prediction score shape: {y_score.shape}')
     prediction_df = pd.DataFrame()
     if 'x' in test_data.columns:
@@ -2083,6 +2079,7 @@ All figure fonts are set to Times New Roman.
     print(f'预测概率数量：{len(y_score_all)}')
     print(f'最低预测概率：{np.min(y_score_all):.6f}')
     print(f'最高预测概率：{np.max(y_score_all):.6f}')
+    export_prediction_map(pca_data_test, y_score_all, 'Original_RF')
     pca_data_test['original-RF_Predicted_Probability'] = y_score_all
     prediction_csv_path = os.path.join(fig_output_dir, 'original-RF_predictions.csv')
     pca_data_test.to_csv(_output(prediction_csv_path), index=False)
@@ -3110,7 +3107,7 @@ def original_079():
     plt.savefig(_output(output_svg_path), format='svg', bbox_inches='tight')
     plt.show()
     print(f'Feature contribution plots saved as: {output_png_path} and {output_svg_path}')
-    export_pca_prediction_map(predicted_data, predicted_data['Predicted_Probability'].to_numpy(), 'PCA_RF_REFIT')
+    export_prediction_map(predicted_data, predicted_data['Predicted_Probability'].to_numpy(), 'PCA_RF_REFIT')
     pd.DataFrame({'PCA': [f'PCA{i + 1}' for i in range(23)], 'Gini_importance': feature_contributions}).to_csv(OUT / 'PCA_RF_REFIT__Gini_importance.csv', index=False)
 
 def original_080():
@@ -3708,7 +3705,7 @@ def install_input_audit():
         return copy(check(source, 'copyfile.source'), destination, *args, **kwargs)
     shutil.copyfile = copyfile
 
-def export_pca_prediction_map(data, probabilities, name):
+def export_prediction_map(data, probabilities, name):
     import numpy as np
     import matplotlib.pyplot as plt
     result = data[['x', 'y']].copy()
@@ -3945,6 +3942,8 @@ def organize_original_outputs(folder):
         "PCA_2DCNN_FROZEN": "PCA_2DCNN",
         "PCA_RF_REFIT": "PCA_RF",
         "RF_REFIT": "Original_RF",
+        "Original_RF": "Original_RF",
+        "Original_1DCNN": "Original_1DCNN",
         "PA": "PA",
         "ROC": "ROC_AUC",
     }
