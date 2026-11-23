@@ -1,0 +1,341 @@
+{
+  "data": {
+    "archive": "CAOB-data.zip",
+    "sha256": "8741ad55577817be3b95a73876115e05db80ddf67b4adad64b52dfc74dd1884d",
+    "parts": [
+      {
+        "name": "CAOB-data.zip.part0001",
+        "bytes": 25165824,
+        "sha256": "6037d88925f7b13e9183ba15a1b1dee13e967f722e49779b8a57b4cf176d2b71"
+      },
+      {
+        "name": "CAOB-data.zip.part0002",
+        "bytes": 25165824,
+        "sha256": "16e1d5f67f84e48e3eb8d35b63d1954d3525956ee255a1ad81a998d7fa7b4575"
+      },
+      {
+        "name": "CAOB-data.zip.part0003",
+        "bytes": 25165824,
+        "sha256": "a02dc360d1e5d21fc8c26c6676885b4646d9585335d3e6ae6592b6582613e981"
+      },
+      {
+        "name": "CAOB-data.zip.part0004",
+        "bytes": 25165824,
+        "sha256": "c1e333381bee8261a543c186c6b519f6058864dc717e982053fe7eff42e8ef04"
+      },
+      {
+        "name": "CAOB-data.zip.part0005",
+        "bytes": 25165824,
+        "sha256": "d2f1265f2f6bd298165adaab952c91a5214c025ba65f09e6bf35c11ddcd4e68f"
+      },
+      {
+        "name": "CAOB-data.zip.part0006",
+        "bytes": 25165824,
+        "sha256": "70a07b54cb7fa488db9219fc97da1754c6aaeaf4f7f68d95d7c69359409c44e9"
+      },
+      {
+        "name": "CAOB-data.zip.part0007",
+        "bytes": 25165824,
+        "sha256": "f2c2c4592fa759ee886c0798e48de59edf06eabb37260c9c6cd408f87974e70a"
+      },
+      {
+        "name": "CAOB-data.zip.part0008",
+        "bytes": 25165824,
+        "sha256": "ea12780666af62c7a69c9c3f5c40ecfa026554e129dc63b3790c5c9a1c766581"
+      },
+      {
+        "name": "CAOB-data.zip.part0009",
+        "bytes": 25165824,
+        "sha256": "5c281a001cd055255d909d854dd28d782d5f0a6a8227538924d85c60f41a4c18"
+      },
+      {
+        "name": "CAOB-data.zip.part0010",
+        "bytes": 25165824,
+        "sha256": "9c5d28a8623ed9223eb637bfb51b3b69f020f912c03f95763e93eee7e0ad0864"
+      },
+      {
+        "name": "CAOB-data.zip.part0011",
+        "bytes": 25165824,
+        "sha256": "303d59d836d18944e5bba2905de1a3dbb0f7d51ea57f3d761b825c6eef1e2201"
+      },
+      {
+        "name": "CAOB-data.zip.part0012",
+        "bytes": 25165824,
+        "sha256": "f73442420d3d1aa8bd065ec67b54e9b119baa442b5c6fd120f4942044a5252bc"
+      },
+      {
+        "name": "CAOB-data.zip.part0013",
+        "bytes": 25165824,
+        "sha256": "2b5151ab5b253de7043ee652256b72edceb38a0ffa18f69aae60f76e565653a5"
+      },
+      {
+        "name": "CAOB-data.zip.part0014",
+        "bytes": 25165824,
+        "sha256": "cd62487cd9964dda4ef53698de1bd6ab6448969dee20258ebb28e5f315a43d33"
+      },
+      {
+        "name": "CAOB-data.zip.part0015",
+        "bytes": 25165824,
+        "sha256": "06211ba84e321d5c65b03bbc6723545d3024f123d9a7cfc97f48d736e2c69191"
+      },
+      {
+        "name": "CAOB-data.zip.part0016",
+        "bytes": 25165824,
+        "sha256": "eba5678974ce2ef1f59d25d55ecb7741bd71e53eaf0a7df761002129b2afed78"
+      },
+      {
+        "name": "CAOB-data.zip.part0017",
+        "bytes": 25165824,
+        "sha256": "c5ed21616885ce3ac2449669acb1abd70afc68894c397db1a7ef009a7a42e0b0"
+      },
+      {
+        "name": "CAOB-data.zip.part0018",
+        "bytes": 25165824,
+        "sha256": "4842d3b218213a9d18dde5070873a1ef11eafbc10bef02c46641d23bc88c9b8a"
+      },
+      {
+        "name": "CAOB-data.zip.part0019",
+        "bytes": 25165824,
+        "sha256": "3849d1b61c04a34a54d2a51ec3e979ec5c415c4eca13bc3f30c399c1b3ca1bad"
+      },
+      {
+        "name": "CAOB-data.zip.part0020",
+        "bytes": 25165824,
+        "sha256": "9f54ddaeb0b0f7a8a8a14cde50d8ea13e3c08e1905fec513a973839a952b06bd"
+      },
+      {
+        "name": "CAOB-data.zip.part0021",
+        "bytes": 25165824,
+        "sha256": "47ff14454dadf0c21b6c65e6431f91e50787e534f377675d415aed30489691d3"
+      },
+      {
+        "name": "CAOB-data.zip.part0022",
+        "bytes": 25165824,
+        "sha256": "bea5ab6d929c78ed692682fe7938a7810f686a10ed066018c921729b39c91aff"
+      },
+      {
+        "name": "CAOB-data.zip.part0023",
+        "bytes": 25165824,
+        "sha256": "e814f69d5659b6d952f0acd472bb5ef645acebc081b32bb68c90fd9a7dee96c6"
+      },
+      {
+        "name": "CAOB-data.zip.part0024",
+        "bytes": 25165824,
+        "sha256": "8b5182c7f0d4ca116175569f7b63098748ee67a51af82852363ddc6cda79889b"
+      },
+      {
+        "name": "CAOB-data.zip.part0025",
+        "bytes": 25165824,
+        "sha256": "95b942cf91cadea27fdf5a0f2e3f3ce005d1d291f5bf7570ecf4b5ec43b6e0a2"
+      },
+      {
+        "name": "CAOB-data.zip.part0026",
+        "bytes": 25165824,
+        "sha256": "577dbb4ad65a5f73d7b6547950e455034d2c46a6b2f9a63f6aa1ecec6613eca2"
+      },
+      {
+        "name": "CAOB-data.zip.part0027",
+        "bytes": 25165824,
+        "sha256": "be1bade1eb6d48e841ef8c9380dde9bd19d4a48adbc04106c6c74d1ff592fa75"
+      },
+      {
+        "name": "CAOB-data.zip.part0028",
+        "bytes": 25165824,
+        "sha256": "ce47d22d8d55edb35ab0f119a9fa7400f7377b59aafb2a0a1b8c33eba8f76b3d"
+      },
+      {
+        "name": "CAOB-data.zip.part0029",
+        "bytes": 25165824,
+        "sha256": "9748ac965107bc7ba55029f267313323c74a6b3547a70c3ecf597f85b197b677"
+      },
+      {
+        "name": "CAOB-data.zip.part0030",
+        "bytes": 25165824,
+        "sha256": "b73104c1556655fd8b233047ec6a8115aba70b068115e2cc38f5dec2fc708bea"
+      },
+      {
+        "name": "CAOB-data.zip.part0031",
+        "bytes": 25165824,
+        "sha256": "3d80c2f87f4df66b6308dc4eb8e74d4517126b0087f408c5e4d9d649c3bd9eaa"
+      },
+      {
+        "name": "CAOB-data.zip.part0032",
+        "bytes": 25165824,
+        "sha256": "11626536c7d75621c5e9be17325ba88107ddab0fce0cd8dba9a55a41941d73bd"
+      },
+      {
+        "name": "CAOB-data.zip.part0033",
+        "bytes": 25165824,
+        "sha256": "c19d3f49ffe7ceb287d53bfe7804bab3b0994069df75a058cf86403f72a59534"
+      },
+      {
+        "name": "CAOB-data.zip.part0034",
+        "bytes": 25165824,
+        "sha256": "26fad173bdebe155ba95bb6356abda2e00307ebc533ebb311ff1b4d4e5a25646"
+      },
+      {
+        "name": "CAOB-data.zip.part0035",
+        "bytes": 25165824,
+        "sha256": "ef337e7b1ea1cca77236ad26e1ec16212b4e12b6cccdb32e372d31f22bd1ec77"
+      },
+      {
+        "name": "CAOB-data.zip.part0036",
+        "bytes": 25165824,
+        "sha256": "b87aa4df0723f210c8b777e0431c63f3a378461aa432bd7de9d31fda4e24e5c6"
+      },
+      {
+        "name": "CAOB-data.zip.part0037",
+        "bytes": 25165824,
+        "sha256": "40f6450d9b85f244da201189cad0d2c8e36dfdfdc71087235a831974e3b621f9"
+      },
+      {
+        "name": "CAOB-data.zip.part0038",
+        "bytes": 25165824,
+        "sha256": "8d3ae987f6f668241b48b90dd1c113b61247c4d804e0e52660aa3e27212f8fad"
+      },
+      {
+        "name": "CAOB-data.zip.part0039",
+        "bytes": 25165824,
+        "sha256": "f80a400ea6266a1ec8cf1be49c222f03e85ae240aa96881498cc15f7a21c590c"
+      },
+      {
+        "name": "CAOB-data.zip.part0040",
+        "bytes": 25165824,
+        "sha256": "8b2f6cba948e0c577bbc282f47dda6a9dbad9fdc652fa47702685fee9900d285"
+      },
+      {
+        "name": "CAOB-data.zip.part0041",
+        "bytes": 25165824,
+        "sha256": "e873bd6175cd62d687ec2af82bb0484b2d0ef02ff1ad7646fb46f91845d6d7fc"
+      },
+      {
+        "name": "CAOB-data.zip.part0042",
+        "bytes": 25165824,
+        "sha256": "117d1c79ff6b3e7e6e5629474d40aba716f3ad365550f81db185937ee99039fe"
+      },
+      {
+        "name": "CAOB-data.zip.part0043",
+        "bytes": 25165824,
+        "sha256": "21e0b1caa1c3ffb6e27ff8f0e0e8b7df49b1f0222a2e8c8365d209eea89db5bb"
+      },
+      {
+        "name": "CAOB-data.zip.part0044",
+        "bytes": 25165824,
+        "sha256": "f50cf5af5129d9d5dbd8e64b8f7b26f4a8b621a1926c7995e3de8d257e708ef1"
+      },
+      {
+        "name": "CAOB-data.zip.part0045",
+        "bytes": 25165824,
+        "sha256": "c0226d3f7a6b09e32de1612b2612113fc99f7d329f032782ecde30cf7d11e289"
+      },
+      {
+        "name": "CAOB-data.zip.part0046",
+        "bytes": 25165824,
+        "sha256": "bea0822e50ca0bfd02d1a61d2ecc667d2ecc7edcf8254e8aefec1c9d5313124c"
+      },
+      {
+        "name": "CAOB-data.zip.part0047",
+        "bytes": 25165824,
+        "sha256": "082b4001643a7ed24a145479d6c61fcfafb3acc0a0009caa127cbb91167c1f71"
+      },
+      {
+        "name": "CAOB-data.zip.part0048",
+        "bytes": 4520143,
+        "sha256": "402cad14185ba4c57d3cc680764df817a18102fe47794f806c28e9c70301de5c"
+      }
+    ],
+    "file_count": 745
+  },
+  "results": {
+    "archive": "CAOB-results.zip",
+    "sha256": "709de6e9a5aa72eff74fc9941fad1eb51b09c1d236798cad61624dc4b4c30669",
+    "parts": [
+      {
+        "name": "CAOB-results.zip.part0001",
+        "bytes": 25165824,
+        "sha256": "afafe5615c709a9bcaa7796fca1a350ed90966ed11b545578525c0d660dff3ab"
+      },
+      {
+        "name": "CAOB-results.zip.part0002",
+        "bytes": 25165824,
+        "sha256": "5c490d2bb868cd2ef4f6d0d4bbddb63624e38745c0bcac4ca4361a2741eb094a"
+      },
+      {
+        "name": "CAOB-results.zip.part0003",
+        "bytes": 25165824,
+        "sha256": "4f4cd062689822b0025b157c88f61c1ea4447748f986cdeb5a9134989402dc4a"
+      },
+      {
+        "name": "CAOB-results.zip.part0004",
+        "bytes": 25165824,
+        "sha256": "febb3b93dc0836ce3979f86fefcd1db9f5631527114e5671ca992d44614afc9e"
+      },
+      {
+        "name": "CAOB-results.zip.part0005",
+        "bytes": 25165824,
+        "sha256": "5dcba566f92329071c50bc4a42b313c1f76b3055ac680d2b143f7db49adea3ae"
+      },
+      {
+        "name": "CAOB-results.zip.part0006",
+        "bytes": 25165824,
+        "sha256": "bd8a5f6960481910a47763c8835b40d131231de062473225a4ec481243c7de4a"
+      },
+      {
+        "name": "CAOB-results.zip.part0007",
+        "bytes": 25165824,
+        "sha256": "980d36d1338b21447b1a5a680d666afb90b4cdd9533c17d2c1d91d214bd7237b"
+      },
+      {
+        "name": "CAOB-results.zip.part0008",
+        "bytes": 25165824,
+        "sha256": "8d45dadfd1fcb9c54402b3b42ea7f717d370fefaa160666e19cb17a7e186d3e1"
+      },
+      {
+        "name": "CAOB-results.zip.part0009",
+        "bytes": 25165824,
+        "sha256": "2c4aa7c5fe52896da7d517c35976cb4a42d5933f525cd926d9932d0bfb6db8ce"
+      },
+      {
+        "name": "CAOB-results.zip.part0010",
+        "bytes": 25165824,
+        "sha256": "d057d8bc28d0913970df15e445d83b17e44e742c884404c74ee3cd7153c6f0df"
+      },
+      {
+        "name": "CAOB-results.zip.part0011",
+        "bytes": 25165824,
+        "sha256": "ef811241705a1471d2eaf35bd0ec432a6d7baada410c683922c21582a47fd962"
+      },
+      {
+        "name": "CAOB-results.zip.part0012",
+        "bytes": 25165824,
+        "sha256": "a5d800665de7621b96e2136affaec084c037867c850f7ca114d472f114c0622e"
+      },
+      {
+        "name": "CAOB-results.zip.part0013",
+        "bytes": 25165824,
+        "sha256": "a73360380691e655c6cc42378a91b66e6fade3c6653648ed26e491bd8b0686ab"
+      },
+      {
+        "name": "CAOB-results.zip.part0014",
+        "bytes": 25165824,
+        "sha256": "dc7d033a4294109c2c86accd250edb4be3c41e10e97e448c0a9ba1860f381706"
+      },
+      {
+        "name": "CAOB-results.zip.part0015",
+        "bytes": 25165824,
+        "sha256": "569fef4dbc3ae31df302c110bdc611f732cf09205b5a21c40200323cfe3fd890"
+      },
+      {
+        "name": "CAOB-results.zip.part0016",
+        "bytes": 25165824,
+        "sha256": "fda87ea626c6cf406ca4d8dad6eeb8fcc38068f681739c5f13458469c434fdac"
+      },
+      {
+        "name": "CAOB-results.zip.part0017",
+        "bytes": 24769479,
+        "sha256": "cd2fd3094868b30827bc8187859b3713ed505286d2d928c6c54156ff81f0ebdf"
+      }
+    ],
+    "file_count": 2598
+  }
+}
